@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#"
+      class=" html_stretched responsive av-preloader-disabled av-custom-lightbox  html_header_top html_logo_left html_main_nav_header html_menu_right html_slim html_header_sticky html_header_shrinking html_header_topbar_active html_mobile_menu_tablet html_disabled html_header_searchicon html_content_align_center html_header_unstick_top_disabled html_header_stretch html_entry_id_4305 ">
+<head>
+    <meta charset="UTF-8"/>
+    <!-- page title, displayed in your browser bar -->
+    <title>Enterprise Build Automation l Why Gradle #WhyGradle</title>
+
+    <!-- mobile setting -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Scripts/CSS and wp_head hook -->
+
+    <!-- This site is optimized with the Yoast SEO plugin v3.0.7 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta name="description"
+          content="See Why Gradle Is The Most Popular Enterprise Build Automation System for Java C++ Android and More. Gradle vs Maven Ant Ivy and More!"/>
+    <meta name="robots" content="noodp"/>
+    <link rel="canonical" href="https://gradle.org/whygradle-build-automation/"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Enterprise Build Automation l Why Gradle #WhyGradle"/>
+    <meta property="og:description"
+          content="See Why Gradle Is The Most Popular Enterprise Build Automation System for Java C++ Android and More. Gradle vs Maven Ant Ivy and More!"/>
+    <meta property="og:url" content="https://gradle.org/whygradle-build-automation/"/>
+    <meta property="og:site_name" content="Gradle"/>
+    <!-- / Yoast SEO plugin. -->
+
+    <link rel="alternate" type="application/rss+xml" title="Gradle &raquo; Feed" href="https://gradle.org/feed/"/>
+    <link rel="alternate" type="application/rss+xml" title="Gradle &raquo; Comments Feed"
+          href="https://gradle.org/comments/feed/"/>
+    <link rel="alternate" type="application/rss+xml"
+          title="Gradle &raquo; #WhyGradle &#8211; the #1 Open Source Enterprise Build Automation Comments Feed"
+          href="https://gradle.org/whygradle-build-automation/feed/"/>
+
+    <!-- google webfont font replacement -->
+    <link rel='stylesheet' id='avia-google-webfont' href='//fonts.googleapis.com/css?family=Lato:300,400,700'
+          type='text/css' media='all'/>
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/72x72\/",
+            "ext": ".png",
+            "source": {"concatemoji": "https:\/\/gradle.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}
+        };
+        !function (a, b, c) {
+            function d(a) {
+                var c, d = b.createElement("canvas"), e = d.getContext && d.getContext("2d"), f = String.fromCharCode;
+                return e && e.fillText ? (e.textBaseline = "top", e.font = "600 32px Arial", "flag" === a ? (e.fillText(f(55356, 56806, 55356, 56826), 0, 0), d.toDataURL().length > 3e3) : "diversity" === a ? (e.fillText(f(55356, 57221), 0, 0), c = e.getImageData(16, 16, 1, 1).data.toString(), e.fillText(f(55356, 57221, 55356, 57343), 0, 0), c !== e.getImageData(16, 16, 1, 1).data.toString()) : ("simple" === a ? e.fillText(f(55357, 56835), 0, 0) : e.fillText(f(55356, 57135), 0, 0), 0 !== e.getImageData(16, 16, 1, 1).data[0])) : !1
+            }
+
+            function e(a) {
+                var c = b.createElement("script");
+                c.src = a, c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+            }
+
+            var f, g;
+            c.supports = {
+                simple: d("simple"),
+                flag: d("flag"),
+                unicode8: d("unicode8"),
+                diversity: d("diversity")
+            }, c.DOMReady = !1, c.readyCallback = function () {
+                c.DOMReady = !0
+            }, c.supports.simple && c.supports.flag && c.supports.unicode8 && c.supports.diversity || (g = function () {
+                c.readyCallback()
+            }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () {
+                "complete" === b.readyState && c.readyCallback()
+            })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='stripe-checkout-button-css'
+          href='https://checkout.stripe.com/v3/checkout/button.css?ver=2.3.7' type='text/css' media='all'/>
+    <link rel='stylesheet' id='pikaday-css'
+          href='https://gradle.org/wp-content/plugins/stripe-checkout-pro/assets/css/vendor/pikaday.min.css?ver=2.3.7'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='stripe-checkout-pro-public-css'
+          href='https://gradle.org/wp-content/plugins/stripe-checkout-pro/assets/css/public-pro.min.css?ver=2.3.7'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='crayon-css'
+          href='https://gradle.org/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.7.1'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='font-awesome-four-css'
+          href='https://gradle.org/wp-content/plugins/font-awesome-4-menus/css/font-awesome.min.css?ver=4.4.0'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='style-name-css'
+          href='https://gradle.org/wp-content/plugins/gradle/gradle-plugin.css?ver=4.4.2' type='text/css' media='all'/>
+    <link rel='stylesheet' id='sharrre-button-style-css'
+          href='https://gradle.org/wp-content/plugins/sharrre-wordpress-plugin-master/css/styling.css?ver=4.4.2'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='main_gradle-css'
+          href='https://gradle.org/wp-content/themes/thegradle/css/main.css?ver=4.4.2' type='text/css' media='all'/>
+    <link rel='stylesheet' id='fullPage-css'
+          href='https://gradle.org/wp-content/themes/thegradle/css/jquery.fullPage.css?ver=4.4.2' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='avia-grid-css' href='https://gradle.org/wp-content/themes/enfold/css/grid.css?ver=2'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='avia-base-css' href='https://gradle.org/wp-content/themes/enfold/css/base.css?ver=2'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='avia-layout-css' href='https://gradle.org/wp-content/themes/enfold/css/layout.css?ver=2'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='avia-scs-css' href='https://gradle.org/wp-content/themes/enfold/css/shortcodes.css?ver=2'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='avia-popup-css-css'
+          href='https://gradle.org/wp-content/themes/enfold/js/aviapopup/magnific-popup.css?ver=1' type='text/css'
+          media='screen'/>
+    <link rel='stylesheet' id='avia-media-css'
+          href='https://gradle.org/wp-content/themes/enfold/js/mediaelement/skin-1/mediaelementplayer.css?ver=1'
+          type='text/css' media='screen'/>
+    <link rel='stylesheet' id='avia-print-css' href='https://gradle.org/wp-content/themes/enfold/css/print.css?ver=1'
+          type='text/css' media='print'/>
+    <link rel='stylesheet' id='avia-dynamic-css'
+          href='https://gradle.org/wp-content/uploads/dynamic_avia/thegradle.css?ver=56bcd954d1797' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='avia-custom-css' href='https://gradle.org/wp-content/themes/enfold/css/custom.css?ver=2'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='avia-style-css' href='https://gradle.org/wp-content/themes/thegradle/style.css?ver=2'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='simple-social-icons-font-css'
+          href='https://gradle.org/wp-content/plugins/simple-social-icons/css/style.css?ver=1.0.12' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='sccss_style-css' href='https://gradle.org?sccss=1&#038;ver=4.4.2' type='text/css'
+          media='all'/>
+    <script type='text/javascript' src='https://gradle.org/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+    <script type='text/javascript'
+            src='https://gradle.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+    <script type='text/javascript'
+            src='https://gradle.org/wp-content/plugins/wp-google-analytics-events/js/ga-scroll-events.js?ver=4.4.2'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var CrayonSyntaxSettings = {
+            "version": "2.7.1",
+            "is_admin": "0",
+            "ajaxurl": "https:\/\/gradle.org\/wp-admin\/admin-ajax.php",
+            "prefix": "crayon-",
+            "setting": "crayon-setting",
+            "selected": "crayon-setting-selected",
+            "changed": "crayon-setting-changed",
+            "special": "crayon-setting-special",
+            "orig_value": "data-orig-value",
+            "debug": ""
+        };
+        var CrayonSyntaxStrings = {"copy": "Press %s to Copy, %s to Paste", "minimize": "Click To Expand Code"};
+        /* ]]> */
+    </script>
+    <script type='text/javascript'
+            src='https://gradle.org/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.7.1'></script>
+    <script type='text/javascript'
+            src='https://gradle.org/wp-content/plugins/sharrre-wordpress-plugin-master/sharrre/jquery.sharrre.min.js?ver=4.4.2'></script>
+    <script type='text/javascript' src='https://gradle.org/wp-content/themes/enfold/js/avia-compat.js?ver=2'></script>
+    <link rel='https://api.w.org/' href='https://gradle.org/wp-json/'/>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gradle.org/xmlrpc.php?rsd"/>
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://gradle.org/wp-includes/wlwmanifest.xml"/>
+    <link rel='shortlink' href='https://gradle.org/?p=4305'/>
+    <link rel="alternate" type="application/json+oembed"
+          href="https://gradle.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgradle.org%2Fwhygradle-build-automation%2F"/>
+    <link rel="alternate" type="text/xml+oembed"
+          href="https://gradle.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgradle.org%2Fwhygradle-build-automation%2F&#038;format=xml"/>
+
+    <!-- Browser Specific CSS -->
+    <script src="https://gradle.org/wp-content/plugins/browser-specific-css/css_browser_selector.js"
+            type="text/javascript"></script>
+    <link rel="stylesheet" href="wp-content/themes/thegradle/style.css" type="text/css" media="screen"/>
+
+    <script type='text/javascript'>
+
+
+        (function () {
+            var wa = document.createElement('script');
+            wa.type = 'text/javascript';
+            wa.async = true;
+            wa.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://w1') + '.luckyorange.com/w.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wa, s);
+        })();
+    </script>
+    <!-- start Mixpanel -->
+    <script type="text/javascript">(function (f, b) {
+        if (!b.__SV) {
+            var a, e, i, g;
+            window.mixpanel = b;
+            b._i = [];
+            b.init = function (a, e, d) {
+                function f(b, h) {
+                    var a = h.split(".");
+                    2 == a.length && (b = b[a[0]], h = a[1]);
+                    b[h] = function () {
+                        b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }
+
+                var c = b;
+                "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+                c.people = c.people || [];
+                c.toString = function (b) {
+                    var a = "mixpanel";
+                    "mixpanel" !== d && (a += "." + d);
+                    b || (a += " (stub)");
+                    return a
+                };
+                c.people.toString = function () {
+                    return c.toString(1) + ".people (stub)"
+                };
+                i = "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+                for (g = 0; g < i.length; g++)f(c, i[g]);
+                b._i.push([a, e, d])
+            };
+            b.__SV = 1.2;
+            a = f.createElement("script");
+            a.type = "text/javascript";
+            a.async = !0;
+            a.src = "//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";
+            e = f.getElementsByTagName("script")[0];
+            e.parentNode.insertBefore(a, e)
+        }
+    })(document, window.mixpanel || []);
+    mixpanel.init("aca9b0c1283fcd6f0a28c5ff150686f6");</script>
+    <!-- end Mixpanel -->
+
+    <script type="text/javascript">
+        mixpanel.set_config({
+            cross_subdomain_cookie: false,
+            debug: false
+        });
+    </script>
+    <!-- end Mixpanel -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/wp-content/uploads/fbrfg/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/wp-content/uploads/fbrfg/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/wp-content/uploads/fbrfg/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/wp-content/uploads/fbrfg/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/wp-content/uploads/fbrfg/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/wp-content/uploads/fbrfg/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/wp-content/uploads/fbrfg/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/wp-content/uploads/fbrfg/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/wp-content/uploads/fbrfg/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/wp-content/uploads/fbrfg/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/wp-content/uploads/fbrfg/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/wp-content/uploads/fbrfg/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/wp-content/uploads/fbrfg/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/wp-content/uploads/fbrfg/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/wp-content/uploads/fbrfg/manifest.json">
+    <link rel="mask-icon" href="/wp-content/uploads/fbrfg/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/wp-content/uploads/fbrfg/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00ff00">
+    <meta name="msapplication-TileImage" content="/wp-content/uploads/fbrfg/mstile-144x144.png">
+    <meta name="msapplication-config" content="/wp-content/uploads/fbrfg/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="profile" href="http://gmpg.org/xfn/11"/>
+    <link rel="alternate" type="application/rss+xml" title="Gradle RSS2 Feed" href="https://gradle.org/feed/"/>
+    <link rel="pingback" href="https://gradle.org/xmlrpc.php"/>
+    <!--[if lt IE 9]>
+    <script src="https://gradle.org/wp-content/themes/enfold/js/html5shiv.js"></script><![endif]-->
+    <style type="text/css" media="screen"> .simple-social-icons ul li a, .simple-social-icons ul li a:hover {
+        background-color: #22da28 !important;
+        border-radius: 3px;
+        color: #000000 !important;
+        border: 0px #ffffff solid !important;
+        font-size: 18px;
+        padding: 9px;
+    }
+
+    .simple-social-icons ul li a:hover {
+        background-color: #666666 !important;
+        border-color: #ffffff !important;
+        color: #ffffff !important;
+    }</style>
+
+    <!--
+    Debugging Info for Theme support:
+
+    Theme: Enfold
+    Version: 3.4.7
+    Installed: enfold
+    AviaFramework Version: 2.3
+    AviaBuilder Version: 0.8
+    - - - - - - - - - - -
+    ChildTheme: TheGradle
+    ChildTheme Version: 1.0.0
+    ChildTheme Installed: enfold
+
+    ML:512-PU:22-PLA:34
+    WP:4.4.2
+    Updates: enabled
+    -->
+
+    <style type='text/css'>
+        @font-face {
+            font-family: 'entypo-fontello';
+            font-weight: normal;
+            font-style: normal;
+            src: url('https://gradle.org/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot?v=3');
+            src: url('https://gradle.org/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot?v=3#iefix') format('embedded-opentype'),
+            url('https://gradle.org/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff?v=3') format('woff'),
+            url('https://gradle.org/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.ttf?v=3') format('truetype'),
+            url('https://gradle.org/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.svg?v=3#entypo-fontello') format('svg');
+        }
+
+        #top .avia-font-entypo-fontello, body .avia-font-entypo-fontello, html body [data-av_iconfont='entypo-fontello']:before {
+            font-family: 'entypo-fontello';
+        }
+
+        @font-face {
+            font-family: 'fontello';
+            font-weight: normal;
+            font-style: normal;
+            src: url('https://gradle.org/wp-content/uploads/avia_fonts/fontello/fontello.eot');
+            src: url('https://gradle.org/wp-content/uploads/avia_fonts/fontello/fontello.eot?#iefix') format('embedded-opentype'),
+            url('https://gradle.org/wp-content/uploads/avia_fonts/fontello/fontello.woff') format('woff'),
+            url('https://gradle.org/wp-content/uploads/avia_fonts/fontello/fontello.ttf') format('truetype'),
+            url('https://gradle.org/wp-content/uploads/avia_fonts/fontello/fontello.svg#fontello') format('svg');
+        }
+
+        #top .avia-font-fontello, body .avia-font-fontello, html body [data-av_iconfont='fontello']:before {
+            font-family: 'fontello';
+        }
+    </style>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-4207603-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="https://gradle.org/wp-content/themes/thegradle/css/custom.css?v=1.0">
+    <![if !IE]>
+    <style>
+        .logo {
+            width: 150px;
+        }
+
+        .scrolled {
+            width: 80px;
+        }
+    </style>
+    <![endif]>
+
+</head>
+
+
+<body id="top" class="page page-id-4305 page-template-default stretched lato " itemscope="itemscope"
+      itemtype="https://schema.org/WebPage">
+
+
+<script type='text/javascript'>
+    window.__lo_site_id = 50194;
+
+    (function () {
+        var wa = document.createElement('script');
+        wa.type = 'text/javascript';
+        wa.async = true;
+        wa.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://cdn') + '.luckyorange.com/w.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wa, s);
+    })();
+</script>
+
+
+<div id='wrap_all'>
+
+
+    <header id='header'
+            class=' header_color light_bg_color  av_header_top av_logo_left av_main_nav_header av_menu_right av_slim av_header_sticky av_header_shrinking av_header_stretch av_mobile_menu_tablet av_header_searchicon av_header_unstick_top_disabled av_bottom_nav_disabled  av_header_border_disabled'
+            role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+
+        <a id="advanced_menu_toggle" href="#" aria-hidden='true' data-av_icon=''
+           data-av_iconfont='entypo-fontello'></a><a id="advanced_menu_hide" href="#" aria-hidden='true'
+                                                     data-av_icon='' data-av_iconfont='entypo-fontello'></a>
+
+        <div id='header_meta'
+             class='container_wrap container_wrap_meta  av_secondary_right av_extra_header_active av_entry_id_4305'>
+
+            <div class='container'>
+                <nav class='sub_menu' role="navigation" itemscope="itemscope"
+                     itemtype="https://schema.org/SiteNavigationElement">
+                    <ul id="avia2-menu" class="menu">
+                        <li id="menu-item-6922"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6922"><a
+                                href="http://docs.gradle.org">Docs</a></li>
+                        <li id="menu-item-6869"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6869"><a
+                                href="/download">Download</a></li>
+                        <li id="menu-item-6880"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6880"><a
+                                href="http://plugins.gradle.org">Plugins</a></li>
+                        <li id="menu-item-6868"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6868"><a
+                                href="http://discuss.gradle.org">Forum</a></li>
+                        <li id="menu-item-6876"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6876"><a
+                                href="http://gradle.com">Gradle.com</a></li>
+                        <li id="menu-item-6950"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6950"><a
+                                href="/contribute-to-gradle/">Contribute</a></li>
+                        <li id="menu-item-6951"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6951"><a
+                                href="https://github.com/gradle/gradle"><i class="fa-github-alt fa"></i><span
+                                class="fontawesome-text"> Code</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id='header_main' class='container_wrap container_wrap_logo'>
+
+            <div class='container av-logo-container'>
+                <div class='inner-container'><strong class='logo'><a href='https://gradle.org/'><img height='100'
+                                                                                                     width='300'
+                                                                                                     src='https://gradle.org/wp-content/uploads/2015/10/gradle-logo-horizontal2.svg'
+                                                                                                     alt='Gradle'/></a></strong>
+                    <nav class='main_menu' data-selectname='Select a page' role="navigation" itemscope="itemscope"
+                         itemtype="https://schema.org/SiteNavigationElement">
+                        <div class="avia-menu av-main-nav-wrap">
+                            <ul id="avia-menu" class="menu av-main-nav">
+                                <li id="menu-item-459"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-1">
+                                    <a href="/whygradle/" itemprop="url"><span class="avia-bullet"></span><span
+                                            class="avia-menu-text">#WhyGradle</span><span class="avia-menu-fx"><span
+                                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-6894"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/why/polyglot-builds/" itemprop="url"><span
+                                                class="avia-bullet"></span><span class="avia-menu-text">Unified Cross Platform Builds</span></a>
+                                        </li>
+                                        <li id="menu-item-6896"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/why/integrates-with-everything/" itemprop="url"><span
+                                                class="avia-bullet"></span><span class="avia-menu-text">Integrates With Everything</span></a>
+                                        </li>
+                                        <li id="menu-item-6897"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/why/robust-dependency-management/" itemprop="url"><span
+                                                class="avia-bullet"></span><span class="avia-menu-text">Robust Dependency Management</span></a>
+                                        </li>
+                                        <li id="menu-item-6898"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/why/powerful-yet-concise-logic/" itemprop="url"><span
+                                                class="avia-bullet"></span><span class="avia-menu-text">Fully Programmable Builds</span></a>
+                                        </li>
+                                        <li id="menu-item-6899"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/why/high-performance-builds/" itemprop="url"><span
+                                                class="avia-bullet"></span><span class="avia-menu-text">Fastest Build Tool for the Enterprise</span></a>
+                                        </li>
+                                        <li id="menu-item-6900"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/why/build-reporting/" itemprop="url"><span
+                                                class="avia-bullet"></span><span
+                                                class="avia-menu-text">Build Reporting</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-6901"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-2">
+                                    <a href="https://gradle.org/getting-started-gradle-java/" itemprop="url"><span
+                                            class="avia-bullet"></span><span
+                                            class="avia-menu-text">Getting Started</span><span
+                                            class="avia-menu-fx"><span class="avia-arrow-wrap"><span
+                                            class="avia-arrow"></span></span></span></a>
+
+
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-6904"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="http://gradle.org/getting-started-gradle-java/"
+                                                itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Java / JVM</span></a></li>
+                                        <li id="menu-item-6905"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/getting-started-native/" itemprop="url"><span
+                                                class="avia-bullet"></span><span
+                                                class="avia-menu-text">Native C / C++</span></a></li>
+                                        <li id="menu-item-6906"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/getting-started-android/" itemprop="url"><span
+                                                class="avia-bullet"></span><span
+                                                class="avia-menu-text">Android</span></a></li>
+                                        <li id="menu-item-6965"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                                                href="https://gradle.org/migrating-a-maven-build-to-gradle/"
+                                                itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Migrating from Maven</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-6909"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-3">
+                                    <a href="/getting-started-gradle/" itemprop="url"><span
+                                            class="avia-bullet"></span><span
+                                            class="avia-menu-text">Resources</span><span class="avia-menu-fx"><span
+                                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-6892"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/why/continuous-delivery-return-on-investment/"
+                                                itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Return on Investment</span></a></li>
+                                        <li id="menu-item-6908"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/case-study-continuous-delivery-netflix/" itemprop="url"><span
+                                                class="avia-bullet"></span><span class="avia-menu-text">Netflix Case Study</span></a>
+                                        </li>
+                                        <li id="menu-item-6910"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/case-study-gradle-continuous-delivery-linkedin/"
+                                                itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">LinkedIn Case Study</span></a></li>
+                                        <li id="menu-item-6911"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/maven_vs_gradle/" itemprop="url"><span
+                                                class="avia-bullet"></span><span
+                                                class="avia-menu-text">Maven vs Gradle</span></a></li>
+                                        <li id="menu-item-6912"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/books/" itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Books</span></a></li>
+                                        <li id="menu-item-6913"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/videos/" itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Videos</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-6870"
+                                    class="Nav-Link-Services menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-4">
+                                    <a href="/services" itemprop="url"><span class="avia-bullet"></span><span
+                                            class="avia-menu-text">Services</span><span class="avia-menu-fx"><span
+                                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-7329"
+                                            class="Nav-Link-ServicesOverview menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/gradle-services/" itemprop="url"><span class="avia-bullet"></span><span
+                                                    class="avia-menu-text">Overview</span></a></li>
+                                        <li id="menu-item-6616"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/training" itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Training</span></a></li>
+                                        <li id="menu-item-6499"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/consulting/hourly-gradle-consulting/" itemprop="url"><span
+                                                class="avia-bullet"></span><span class="avia-menu-text">Remote Consulting</span></a>
+                                        </li>
+                                        <li id="menu-item-6917"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/consulting/" itemprop="url"><span
+                                                class="avia-bullet"></span><span class="avia-menu-text">Onsite Consulting</span></a>
+                                        </li>
+                                        <li id="menu-item-6914"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/support/" itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Support</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-6952"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-5">
+                                    <a href="/blog" itemprop="url"><span class="avia-bullet"></span><span
+                                            class="avia-menu-text">Blog</span><span class="avia-menu-fx"><span
+                                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+                                </li>
+                                <li id="menu-item-6923"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children av-menu-button av-menu-button-colored menu-item-top-level menu-item-top-level-6">
+                                    <a href="/company/" itemprop="url"><span class="avia-bullet"></span><span
+                                            class="avia-menu-text">Gradle Inc.</span><span class="avia-menu-fx"><span
+                                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-6925"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/company/" itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">About Us</span></a></li>
+                                        <li id="menu-item-6926"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/gradle-team/" itemprop="url"><span
+                                                class="avia-bullet"></span><span class="avia-menu-text">Team</span></a>
+                                        </li>
+                                        <li id="menu-item-6927"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/news/" itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">News</span></a></li>
+                                        <li id="menu-item-6928"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/events/" itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Events</span></a></li>
+                                        <li id="menu-item-6929"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/gradle-jobs/" itemprop="url"><span
+                                                class="avia-bullet"></span><span class="avia-menu-text">Jobs</span></a>
+                                        </li>
+                                        <li id="menu-item-7121"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/gradle-store" itemprop="url"><span
+                                                class="avia-bullet"></span><span class="avia-menu-text">Store</span></a>
+                                        </li>
+                                        <li id="menu-item-6930"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                                href="/contact/" itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Contact Us</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-search" class="noMobile menu-item menu-item-search-dropdown">
+                                    <a href="?s=" rel="nofollow" data-avia-search-tooltip="
+
+&lt;form action=&quot;https://gradle.org/&quot; id=&quot;searchform&quot; method=&quot;get&quot; class=&quot;&quot;&gt;
+	&lt;div&gt;
+		&lt;input type=&quot;submit&quot; value=&quot;&quot; id=&quot;searchsubmit&quot; class=&quot;button avia-font-entypo-fontello&quot; /&gt;
+		&lt;input type=&quot;text&quot; id=&quot;s&quot; name=&quot;s&quot; value=&quot;&quot; placeholder='Search' /&gt;
+			&lt;/div&gt;
+&lt;/form&gt;" aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'><span
+                                            class="avia_hidden_link_text">Search</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- end container_wrap-->
+        </div>
+
+        <div class='header_bg'></div>
+
+        <!-- end header -->
+    </header>
+
+    <div id='main' data-scroll-offset='88'>
+
+        <div id='av_section_1'
+             class='avia-section socket_color avia-section-default avia-no-border-styling avia-bg-style-scroll  avia-builder-el-0  el_before_av_section  avia-builder-el-first   av-minimum-height av-minimum-height-custom container_wrap fullsize'
+             style='background-color: #02303A; background-color: #02303A; '>
+            <div class='container' style='height:500px'>
+                <main role="main" itemprop="mainContentOfPage"
+                      class='template-page content  av-content-full alpha units'>
+                    <div class='post-entry post-entry-type-page post-entry-4305'>
+                        <div class='entry-content-wrapper clearfix'>
+                            <div style='padding-bottom:10px;color:#ffffff;font-size:38px;'
+                                 class='av-special-heading av-special-heading-h1 custom-color-heading blockquote modern-quote modern-centered  avia-builder-el-1  el_before_av_hr  avia-builder-el-first   av-inherit-size'>
+                                <h1 class='av-special-heading-tag' itemprop="headline">#WhyGradle</h1>
+
+                                <div class='special-heading-border'>
+                                    <div class='special-heading-inner-border' style='border-color:#ffffff'></div>
+                                </div>
+                            </div>
+                            <div style=' margin-top:20px; margin-bottom:20px;'
+                                 class='hr hr-custom hr-center hr-icon-no  avia-builder-el-2  el_after_av_heading  el_before_av_textblock '>
+                                <span class='hr-inner   inner-border-av-border-thin'
+                                      style=' width:50px; border-color:#ffffff;'><span
+                                        class='hr-inner-style'></span></span></div>
+                            <section class="av_textblock_section" itemscope="itemscope"
+                                     itemtype="https://schema.org/CreativeWork">
+                                <div class='avia_textblock  av_inherit_color' style='font-size:20px; color:#ffffff; '
+                                     itemprop="text"><p style="text-align: center;">Gradle makes the impossible
+                                    possible, the possible easy and the easy elegant.</p>
+                                </div>
+                            </section>
+                            <div class="flex_column av_one_third  flex_column_div first  avia-builder-el-4  el_after_av_textblock  el_before_av_one_third  column-top-margin">
+                                <span class="av_font_icon avia_animate_when_visible av-icon-style-border  avia-icon-pos-center "
+                                      style="color:#22DA27; border-color:#22DA27;"><a
+                                        href='https://gradle.org/why/polyglot-builds/' class='av-icon-char'
+                                        style='font-size:70px;line-height:70px;width:70px;' aria-hidden='true'
+                                        data-av_icon='' data-av_iconfont='entypo-fontello'></a><span
+                                        class='av_icon_caption av-special-font'>Polyglot Builds</span></span>
+
+                                <div style='height:20px'
+                                     class='hr hr-invisible  avia-builder-el-6  el_after_av_font_icon  el_before_av_textblock  '>
+                                    <span class='hr-inner '><span class='hr-inner-style'></span></span></div>
+                                <section class="av_textblock_section" itemscope="itemscope"
+                                         itemtype="https://schema.org/CreativeWork">
+                                    <div class='avia_textblock ' style='font-size:19px; ' itemprop="text"><p>Linkedin
+                                        uses Gradle to build 60 different programming languages including Java, Scala,
+                                        Python, C/C++, Android, IOS and many many more. Find out why Gradle is the
+                                        polyglot build tool.</p>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="flex_column av_one_third  flex_column_div   avia-builder-el-8  el_after_av_one_third  el_before_av_one_third  column-top-margin">
+                                <span class="av_font_icon avia_animate_when_visible av-icon-style-border  avia-icon-pos-center "
+                                      style="color:#22DA27; border-color:#22DA27;"><a
+                                        href='https://gradle.org/why/integrates-with-everything/' class='av-icon-char'
+                                        style='font-size:70px;line-height:70px;width:70px;' aria-hidden='true'
+                                        data-av_icon='' data-av_iconfont='entypo-fontello'></a><span
+                                        class='av_icon_caption av-special-font'>Tool Integrations</span></span>
+
+                                <div style='height:20px'
+                                     class='hr hr-invisible  avia-builder-el-10  el_after_av_font_icon  el_before_av_textblock  '>
+                                    <span class='hr-inner '><span class='hr-inner-style'></span></span></div>
+                                <section class="av_textblock_section" itemscope="itemscope"
+                                         itemtype="https://schema.org/CreativeWork">
+                                    <div class='avia_textblock ' style='font-size:19px; ' itemprop="text"><p>Plugins and
+                                        integrations with every imaginable tool in the DevOps Automation pipeline from
+                                        IDEs like Eclipse, Android Studio and IntelliJ to Jenkins through to Chef,
+                                        Puppet, Docker, and Ansible.</p>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="flex_column av_one_third  flex_column_div   avia-builder-el-12  el_after_av_one_third  el_before_av_one_third  column-top-margin">
+                                <span class="av_font_icon avia_animate_when_visible av-icon-style-border  avia-icon-pos-center "
+                                      style="color:#22DA27; border-color:#22DA27;"><a
+                                        href='https://gradle.org/why/robust-dependency-management/' class='av-icon-char'
+                                        style='font-size:70px;line-height:70px;width:70px;' aria-hidden='true'
+                                        data-av_icon='' data-av_iconfont='entypo-fontello'></a><span
+                                        class='av_icon_caption av-special-font'>Robust Dependency Management</span></span>
+
+                                <div style='height:20px'
+                                     class='hr hr-invisible  avia-builder-el-14  el_after_av_font_icon  el_before_av_textblock  '>
+                                    <span class='hr-inner '><span class='hr-inner-style'></span></span></div>
+                                <section class="av_textblock_section" itemscope="itemscope"
+                                         itemtype="https://schema.org/CreativeWork">
+                                    <div class='avia_textblock ' style='font-size:19px; ' itemprop="text"><p>Out of the
+                                        box, Gradle handles transitive dependencies that resolve across multiple
+                                        repository types including Maven, Ivy, flat files.</p>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="flex_column av_one_third  flex_column_div first  avia-builder-el-16  el_after_av_one_third  el_before_av_one_third  column-top-margin">
+                                <span class="av_font_icon avia_animate_when_visible av-icon-style-border  avia-icon-pos-center "
+                                      style="color:#22DA27; border-color:#22DA27;"><a
+                                        href='https://gradle.org/why/powerful-yet-concise-logic/' class='av-icon-char'
+                                        style='font-size:70px;line-height:70px;width:70px;' aria-hidden='true'
+                                        data-av_icon='' data-av_iconfont='entypo-fontello'></a><span
+                                        class='av_icon_caption av-special-font'>Powerful Yet Concise Logic</span></span>
+
+                                <div style='height:20px'
+                                     class='hr hr-invisible  avia-builder-el-18  el_after_av_font_icon  el_before_av_textblock  '>
+                                    <span class='hr-inner '><span class='hr-inner-style'></span></span></div>
+                                <section class="av_textblock_section" itemscope="itemscope"
+                                         itemtype="https://schema.org/CreativeWork">
+                                    <div class='avia_textblock ' style='font-size:19px; ' itemprop="text"><p>The perfect
+                                        blend of declarative and imperative. Gradle provides ultimate control and
+                                        scriptability of Build Automation &#038; Continuous Deployment pipelines. A
+                                        concise maintainable build is why Gradle is becoming an Enterprise standard for
+                                        build automation.</p>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="flex_column av_one_third  flex_column_div   avia-builder-el-20  el_after_av_one_third  el_before_av_one_third  column-top-margin">
+                                <span class="av_font_icon avia_animate_when_visible av-icon-style-border  avia-icon-pos-center "
+                                      style="color:#22DA27; border-color:#22DA27;"><a
+                                        href='https://gradle.org/why/high-performance-builds/' class='av-icon-char'
+                                        style='font-size:70px;line-height:70px;width:70px;' aria-hidden='true'
+                                        data-av_icon='' data-av_iconfont='entypo-fontello'></a><span
+                                        class='av_icon_caption av-special-font'>High Performance Builds</span></span>
+
+                                <div style='height:20px'
+                                     class='hr hr-invisible  avia-builder-el-22  el_after_av_font_icon  el_before_av_textblock  '>
+                                    <span class='hr-inner '><span class='hr-inner-style'></span></span></div>
+                                <section class="av_textblock_section" itemscope="itemscope"
+                                         itemtype="https://schema.org/CreativeWork">
+                                    <div class='avia_textblock ' style='font-size:19px; ' itemprop="text"><p>Incremental
+                                        builds, build caching and parallelization drives the Gradle daemon to new
+                                        heights of performance. Build only what has changed and see how performance is
+                                        one of the reasons why Gradle is so broadly adopted.</p>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="flex_column av_one_third  flex_column_div   avia-builder-el-24  el_after_av_one_third  avia-builder-el-last  column-top-margin">
+                                <span class="av_font_icon avia_animate_when_visible av-icon-style-border  avia-icon-pos-center "
+                                      style="color:#22DA27; border-color:#22DA27;"><a
+                                        href='https://gradle.org/why/build-reporting/' class='av-icon-char'
+                                        style='font-size:70px;line-height:70px;width:70px;' aria-hidden='true'
+                                        data-av_icon='' data-av_iconfont='entypo-fontello'></a><span
+                                        class='av_icon_caption av-special-font'>Build Reporting</span></span>
+
+                                <div style='height:20px'
+                                     class='hr hr-invisible  avia-builder-el-26  el_after_av_font_icon  el_before_av_textblock  '>
+                                    <span class='hr-inner '><span class='hr-inner-style'></span></span></div>
+                                <section class="av_textblock_section" itemscope="itemscope"
+                                         itemtype="https://schema.org/CreativeWork">
+                                    <div class='avia_textblock ' style='font-size:19px; ' itemprop="text"><p>Robust
+                                        build analytic capabilities that allow build masters to see exactly what needs
+                                        to be optimized and zero in on build problems. Gain insight into the efficiency
+                                        of build automation including which modules are outperforming and which are
+                                        lagging.</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <!-- close content main element --></div>
+            <div class='av-extra-border-element border-extra-arrow-down'>
+                <div class='av-extra-border-outer'>
+                    <div class='av-extra-border-inner' style='background-color:#02303A;'></div>
+                </div>
+            </div>
+        </div>
+        <div id='av_section_2'
+             class='avia-section main_color avia-section-default avia-no-shadow av-parallax-section avia-bg-style-parallax  avia-builder-el-28  el_after_av_section  avia-builder-el-last   container_wrap fullsize'
+             data-section-bg-repeat='no-repeat'>
+            <div class='av-parallax' data-avia-parallax-ratio='0.3'>
+                <div class='av-parallax-inner main_color  avia-full-stretch'
+                     style='background-repeat: no-repeat; background-image: url(https://gradle.org/wp-content/uploads/2014/08/GradleConsulting.jpg); background-attachment: scroll; background-position: top center; '></div>
+            </div>
+            <div class='container'>
+                <div class='template-page content  av-content-full alpha units'>
+                    <div class='post-entry post-entry-type-page post-entry-4305'>
+                        <div class='entry-content-wrapper clearfix'>
+                            <div class="flex_column av_one_third  flex_column_div first  avia-builder-el-29  el_before_av_two_third  avia-builder-el-first  ">
+                                <span class="av_font_icon avia_animate_when_visible av-icon-style-  avia-icon-pos-center "
+                                      style="color:#22DA27; border-color:#22DA27;"><a
+                                        href='https://gradle.org/?post_type=training&p=1098' class='av-icon-char'
+                                        style='font-size:140px;line-height:140px;' aria-hidden='true' data-av_icon=''
+                                        data-av_iconfont='entypo-fontello'></a></span></div>
+                            <div class="flex_column av_two_third  flex_column_div   avia-builder-el-31  el_after_av_one_third  avia-builder-el-last  ">
+                                <div style='padding-bottom:0px;color:#ffffff;'
+                                     class='av-special-heading av-special-heading-h3 custom-color-heading blockquote modern-quote modern-centered  avia-builder-el-32  el_before_av_textblock  avia-builder-el-first   av-thin-font'>
+                                    <h3 class='av-special-heading-tag' itemprop="headline"><strong>Get Instructor-led
+                                        Training from Gradle</strong></h3>
+
+                                    <div class='special-heading-border'>
+                                        <div class='special-heading-inner-border' style='border-color:#ffffff'></div>
+                                    </div>
+                                </div>
+                                <section class="av_textblock_section" itemscope="itemscope"
+                                         itemtype="https://schema.org/CreativeWork">
+                                    <div class='avia_textblock  av_inherit_color'
+                                         style='font-size:16px; color:#ffffff; ' itemprop="text"><p
+                                            style="text-align: center;">Get a half-day training from the source and be
+                                        up and running immediately.</p>
+                                    </div>
+                                </section>
+                                <div style='height:20px'
+                                     class='hr hr-invisible  avia-builder-el-34  el_after_av_textblock  el_before_av_button  '>
+                                    <span class='hr-inner '><span class='hr-inner-style'></span></span></div>
+                                <div class='avia-button-wrap avia-button-center  avia-builder-el-35  el_after_av_hr  avia-builder-el-last  '>
+                                    <a href='//gradle.org/training'
+                                       class='avia-button  avia-icon_select-no avia-color-theme-color avia-size-x-large avia-position-center '><span
+                                            class='avia_iconbox_title'>Get Training</span></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- close content main div --> <!-- section close by builder template -->        </div>
+            <!--end builder template--></div>
+        <!-- close default .container_wrap element -->
+
+        <div class='container_wrap footer_color' id='footer'>
+
+            <div class='container'>
+
+                <div class='flex_column av_one_fifth  first el_before_av_one_fifth'>
+                    <section id="simple-social-icons-2" class="widget clearfix simple-social-icons"><h3
+                            class="widgettitle">Follow</h3>
+                        <ul class="alignleft">
+                            <li class="social-facebook"><a
+                                    href="https://www.facebook.com/pages/GradleInc./207485429280824">&#xe606;</a></li>
+                            <li class="social-github"><a href="https://github.com/gradle/gradle">&#xe60a;</a></li>
+                            <li class="social-linkedin"><a href="https://www.linkedin.com/company/gradleware">
+                                &#xe603;</a></li>
+                            <li class="social-twitter"><a href="https://twitter.com/gradle">&#xe607;</a></li>
+                            <li class="social-youtube"><a
+                                    href="https://www.youtube.com/channel/UCvClhveoEjokKIuBAsSjEwQ">&#xe60f;</a></li>
+                        </ul>
+                        <span class="seperator extralight-border"></span></section>
+                </div>
+                <div class='flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth '>
+                    <section id="nav_menu-2" class="widget clearfix widget_nav_menu"><h3 class="widgettitle">Get
+                        Help</h3>
+
+                        <div class="menu-footer-one-container">
+                            <ul id="menu-footer-one" class="menu">
+                                <li id="menu-item-1556"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1556"><a
+                                        href="http://discuss.gradle.org">Forums</a></li>
+                                <li id="menu-item-7151"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7151"><a
+                                        href="/consulting">Consulting</a></li>
+                                <li id="menu-item-1559"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1559"><a
+                                        href="https://gradle.org/contact/">Contact</a></li>
+                                <li id="menu-item-6059"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6059"><a
+                                        href="https://gradle.org/contribute-to-gradle/">Contribute to Gradle</a></li>
+                            </ul>
+                        </div>
+                        <span class="seperator extralight-border"></span></section>
+                </div>
+                <div class='flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth '>
+                    <section id="nav_menu-3" class="widget clearfix widget_nav_menu"><h3 class="widgettitle">Gradle
+                        Inc.</h3>
+
+                        <div class="menu-footer-two-container">
+                            <ul id="menu-footer-two" class="menu">
+                                <li id="menu-item-2461"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2461"><a
+                                        href="/company/">Company</a></li>
+                                <li id="menu-item-1562"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1562"><a
+                                        href="https://gradle.org/gradle-blog/">Blog</a></li>
+                                <li id="menu-item-2685"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2685"><a
+                                        href="https://gradle.org/gradle-jobs/">Jobs</a></li>
+                                <li id="menu-item-1564"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1564"><a
+                                        href="https://gradle.org/news/">News</a></li>
+                                <li id="menu-item-1565"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1565"><a
+                                        href="https://gradle.org/press-releases/">Press Releases</a></li>
+                                <li id="menu-item-1566"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1566"><a
+                                        href="https://gradle.org/events/">Events</a></li>
+                            </ul>
+                        </div>
+                        <span class="seperator extralight-border"></span></section>
+                </div>
+                <div class='flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth '>
+                    <section id="text-3" class="widget clearfix widget_text"><h3 class="widgettitle">Contact</h3>
+
+                        <div class="textwidget"><p>Heavybit Accelerator<br/>
+                            325 9th Street<br/>
+                            San Francisco, CA, United States</p>
+
+                            <p>1-914-418-4010<br/>
+                                <a href="mailto:info@gradle.com">info@gradle.com</a></p>
+                        </div>
+                        <span class="seperator extralight-border"></span></section>
+                </div>
+                <div class='flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth '>
+                    <section id="recent-posts-4" class="widget clearfix widget_recent_entries"><h3 class="widgettitle">
+                        Blog</h3>
+                        <ul>
+                            <li>
+                                <a href="https://gradle.org/february-newsletter-2/">February Newsletter</a>
+                            </li>
+                            <li>
+                                <a href="https://gradle.org/continuous-build-time-start-using-default/">Continuous
+                                    Build: is it time to start using this by default?</a>
+                            </li>
+                            <li>
+                                <a href="https://gradle.org/contributors-for-february-2016/">Community contributors for
+                                    February 2016</a>
+                            </li>
+                            <li>
+                                <a href="https://gradle.org/the-j20bjc-gradle-plugin-by-bruno-bowden-meetup-at-google/">The
+                                    J20bjC Gradle Plugin by Bruno Bowden (Gradle Meetup at Google)</a>
+                            </li>
+                            <li>
+                                <a href="https://gradle.org/gradle-and-the-android-build-sytem-by-hans-dockter-meetup-at-google/">What&#8217;s
+                                    new with Gradle and the Android Build Sytem by Hans Dockter (Gradle Meetup at
+                                    Google)</a>
+                            </li>
+                        </ul>
+                        <span class="seperator extralight-border"></span></section>
+                </div>
+
+            </div>
+
+
+            <!-- ####### END FOOTER CONTAINER ####### -->
+        </div>
+
+
+        <footer class='container_wrap socket_color' id='socket' role="contentinfo" itemscope="itemscope"
+                itemtype="https://schema.org/WPFooter">
+            <div class='container'>
+
+                <span class='copyright'>© Copyright - 2015 Gradle Inc. <a href="//gradle.org/privacy">Privacy Policy</a> | <a
+                        href="//gradle.org/TOS">Terms of Service</a></span>
+
+                <nav class='sub_menu_socket' role="navigation" itemscope="itemscope"
+                     itemtype="https://schema.org/SiteNavigationElement"></nav>
+            </div>
+
+            <!-- ####### END SOCKET CONTAINER ####### -->
+        </footer>
+
+
+        <!-- end main -->
+    </div>
+
+    <!-- end wrap_all --></div>
+
+<script type='text/javascript'>
+    var rightNow = new Date();
+    var humanDate = rightNow.toDateString();
+
+    mixpanel.register_once({
+        'first_wp_page': document.title,
+        'first_wp_contact': humanDate
+    });
+    mixpanel.track("Viewed Page", {
+        'Page Name': document.title, 'Page URL': window.location.pathname
+    });
+</script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var avia_framework_globals = avia_framework_globals || {};
+    avia_framework_globals.frameworkUrl = 'https://gradle.org/wp-content/themes/enfold/framework/';
+    avia_framework_globals.installedAt = 'https://gradle.org/wp-content/themes/enfold/';
+    avia_framework_globals.ajaxurl = 'https://gradle.org/wp-admin/admin-ajax.php';
+    /* ]]> */
+</script>
+
+<script type="text/javascript">
+    <!--
+    piCId = '2332';
+    piAId = '69052';
+
+
+    (function () {
+        function async_load() {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+            var c = document.getElementsByTagName('script')[0];
+            c.parentNode.insertBefore(s, c);
+        }
+
+        if (window.attachEvent) {
+            window.attachEvent('onload', async_load);
+        }
+        else {
+            window.addEventListener('load', async_load, false);
+        }
+    })();
+    -->
+</script>
+<script type='text/javascript' src='https://checkout.stripe.com/checkout.js'></script>
+<script type='text/javascript'
+        src='https://gradle.org/wp-content/plugins/stripe-checkout-pro/assets/js/vendor/parsley.min.js?ver=2.3.7'></script>
+<script type='text/javascript'
+        src='https://gradle.org/wp-content/plugins/stripe-checkout-pro/assets/js/vendor/moment.min.js?ver=2.3.7'></script>
+<script type='text/javascript'
+        src='https://gradle.org/wp-content/plugins/stripe-checkout-pro/assets/js/vendor/pikaday.min.js?ver=2.3.7'></script>
+<script type='text/javascript'
+        src='https://gradle.org/wp-content/plugins/stripe-checkout-pro/assets/js/vendor/pikaday-jquery.min.js?ver=2.3.7'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var sc_coup = {"ajaxurl": "https:\/\/gradle.org\/wp-admin\/admin-ajax.php"};
+    var sc_script = null;
+    /* ]]> */
+</script>
+<script type='text/javascript'
+        src='https://gradle.org/wp-content/plugins/stripe-checkout-pro/assets/js/public-main.min.js?ver=2.3.7'></script>
+<script type='text/javascript' src='https://gradle.org/wp-content/plugins/gradle/gradle-plugin.js?ver=0.0.1'></script>
+<script type='text/javascript' src='https://gradle.org/wp-content/themes/enfold/js/avia.js?ver=3'></script>
+<script type='text/javascript' src='https://gradle.org/wp-content/themes/enfold/js/shortcodes.js?ver=3'></script>
+<script type='text/javascript'
+        src='https://gradle.org/wp-content/themes/enfold/js/aviapopup/jquery.magnific-popup.min.js?ver=2'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var mejsL10n = {
+        "language": "en-US",
+        "strings": {
+            "Close": "Close",
+            "Fullscreen": "Fullscreen",
+            "Download File": "Download File",
+            "Download Video": "Download Video",
+            "Play\/Pause": "Play\/Pause",
+            "Mute Toggle": "Mute Toggle",
+            "None": "None",
+            "Turn off Fullscreen": "Turn off Fullscreen",
+            "Go Fullscreen": "Go Fullscreen",
+            "Unmute": "Unmute",
+            "Mute": "Mute",
+            "Captions\/Subtitles": "Captions\/Subtitles"
+        }
+    };
+    var _wpmejsSettings = {"pluginPath": "\/wp-includes\/js\/mediaelement\/"};
+    /* ]]> */
+</script>
+<script type='text/javascript'
+        src='https://gradle.org/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.18.1'></script>
+<script type='text/javascript'
+        src='https://gradle.org/wp-includes/js/mediaelement/wp-mediaelement.js?ver=4.4.2'></script>
+<script type='text/javascript' src='https://gradle.org/wp-includes/js/comment-reply.min.js?ver=4.4.2'></script>
+<script type='text/javascript' src='https://gradle.org/wp-includes/js/wp-embed.min.js?ver=4.4.2'></script>
+<script>
+    jQuery(document).ready(function () {
+        jQuery('.lazyYT').each(function () {
+            var id = jQuery(this).data('youtube-id'),
+                    url = 'https://www.youtube.com/watch?v=' + id;
+            jQuery(this).replaceWith('<a href="' + url + '">' + url + '</a>');
+        });
+    });
+</script>
+
+<script>
+
+    jQuery(document).ready(function () {
+        scroll_events.bind_events({
+            universal: 1,
+            scroll_elements: [],
+            click_elements: [{
+                'select': '.Training-Button-Cert',
+                'category': 'Training-Button-Cert',
+                'action': 'Training-Button-Cert',
+                'label': 'Training-Button-Cert'
+            }, {
+                'select': '.Training-Button-Contact',
+                'category': 'Training-Button-Contact',
+                'action': 'Training-Button-Contact',
+                'label': 'Training-Button-Contact'
+            }, {
+                'select': '.Consulting-Contact-Button',
+                'category': 'Consulting-Contact-Button',
+                'action': 'Consulting-Contact-Button',
+                'label': 'Consulting-Contact-Button'
+            }, {
+                'select': '.Home-Button-Ok',
+                'category': 'Home-Button-Ok',
+                'action': 'Home-Button-Ok',
+                'label': 'Home-Button-Ok'
+            }, {
+                'select': '.Home-Link-BuildHell',
+                'category': 'Home-Link-BuildHell',
+                'action': 'Home-Link-BuildHell',
+                'label': 'Home-Link-BuildHell'
+            }, {
+                'select': '.Home-Link-TrainingTitle1',
+                'category': 'Home-Link-TrainingTitle1',
+                'action': 'Home-Link-TrainingTitle1',
+                'label': 'Home-Link-TrainingTitle1'
+            }, {
+                'select': '.Home-Link-TrainingTitle2',
+                'category': 'Home-Link-TrainingTitle2',
+                'action': 'Home-Link-TrainingTitle2',
+                'label': 'Home-Link-TrainingTitle2'
+            }, {
+                'select': '.Home-Link-TrainingTitle3',
+                'category': 'Home-Link-TrainingTitle3',
+                'action': 'Home-Link-TrainingTitle3',
+                'label': 'Home-Link-TrainingTitle3'
+            }, {
+                'select': '.Home-Button1-Register',
+                'category': 'Home-Button1-Register',
+                'action': 'Home-Button1-Register',
+                'label': 'Home-Button1-Register'
+            }, {
+                'select': '.Home-Button2-Register',
+                'category': 'Home-Button2-Register',
+                'action': 'Home-Button2-Register',
+                'label': 'Home-Button2-Register'
+            }, {
+                'select': '.Home-Button3-Register',
+                'category': 'Home-Button3-Register',
+                'action': 'Home-Button3-Register',
+                'label': 'Home-Button3-Register'
+            }, {
+                'select': '.Home-Button-Ebook1',
+                'category': 'Home-Button-Ebook1',
+                'action': 'Home-Button-Ebook1',
+                'label': 'Home-Button-Ebook1'
+            }, {
+                'select': '.Home-Button-Ebook2',
+                'category': 'Home-Button-Ebook2',
+                'action': 'Home-Button-Ebook2',
+                'label': 'Home-Button-Ebook2'
+            }, {
+                'select': '.Services-Button-Contact',
+                'category': 'Services-Button-Contact',
+                'action': 'Services-Button-Contact',
+                'label': 'Services-Button-Contact'
+            }, {
+                'select': '.Services-Link-AndMore',
+                'category': 'Services-Link-AndMore',
+                'action': 'Services-Link-AndMore',
+                'label': 'Services-Link-AndMore'
+            }, {
+                'select': '.Services-Button-Package',
+                'category': 'Services-Button-Package',
+                'action': 'Services-Button-Package',
+                'label': 'Services-Button-Package'
+            }, {
+                'select': '.Services-Button-Consulting',
+                'category': 'Services-Button-Consulting',
+                'action': 'Services-Button-Consulting',
+                'label': 'Services-Button-Consulting'
+            }, {
+                'select': '.Services-Button-Udacity',
+                'category': 'Services-Button-Udacity',
+                'action': 'Services-Button-Udacity',
+                'label': 'Services-Button-Udacity'
+            }, {
+                'select': '.Services-Button-TrainingSchedule',
+                'category': 'Services-Button-TrainingSchedule',
+                'action': 'Services-Button-TrainingSchedule',
+                'label': 'Services-Button-TrainingSchedule'
+            }, {
+                'select': '.Services-Button-TrainingIntro',
+                'category': 'Services-Button-TrainingIntro',
+                'action': 'Services-Button-TrainingIntro',
+                'label': 'Services-Button-TrainingIntro'
+            }, {
+                'select': '.Services-Button-Cert',
+                'category': 'Services-Button-Cert',
+                'action': 'Services-Button-Cert',
+                'label': 'Services-Button-Cert'
+            }, {
+                'select': '.Training-Button-Documentation',
+                'category': 'Training-Button-Documentation',
+                'action': 'Training-Button-Documentation',
+                'label': 'Training-Button-Documentation'
+            }, {
+                'select': '.Training-Button-Ebooks',
+                'category': 'Training-Button-Ebooks',
+                'action': 'Training-Button-Ebooks',
+                'label': 'Training-Button-Ebooks'
+            }, {
+                'select': '.Training-Button-Forum',
+                'category': 'Training-Button-Forum',
+                'action': 'Training-Button-Forum',
+                'label': 'Training-Button-Forum'
+            }, {
+                'select': '.Training-Button-Udacity',
+                'category': 'Training-Button-Udacity',
+                'action': 'Training-Button-Udacity',
+                'label': 'Training-Button-Udacity'
+            }, {
+                'select': '.Training-Button-IntroClass',
+                'category': 'Training-Button-IntroClass',
+                'action': 'Training-Button-IntroClass',
+                'label': 'Training-Button-IntroClass'
+            }, {
+                'select': '.Training-Button-JavaClass',
+                'category': 'Training-Button-JavaClass',
+                'action': 'Training-Button-JavaClass',
+                'label': 'Training-Button-JavaClass'
+            }, {
+                'select': '.Trainging-Button-Cclass',
+                'category': 'Trainging-Button-Cclass',
+                'action': 'Trainging-Button-Cclass',
+                'label': 'Trainging-Button-Cclass'
+            }, {
+                'select': '.Training-Button-AndroidClass',
+                'category': 'Training-Button-AndroidClass',
+                'action': 'Training-Button-AndroidClass',
+                'label': 'Training-Button-AndroidClass'
+            }, {
+                'select': '.Training-Button-ContinuousDelivery',
+                'category': 'Training-Button-ContinuousDelivery',
+                'action': 'Training-Button-ContinuousDelivery',
+                'label': 'Training-Button-ContinuousDelivery'
+            }, {
+                'select': '.Training-Button-Enterprise',
+                'category': 'Training-Button-Enterprise',
+                'action': 'Training-Button-Enterprise',
+                'label': 'Training-Button-Enterprise'
+            }, {
+                'select': '.Training-Button-ExtendingClass',
+                'category': 'Training-Button-ExtendingClass',
+                'action': 'Training-Button-ExtendingClass',
+                'label': 'Training-Button-ExtendingClass'
+            }, {
+                'select': '.Training-Button-DependencyClass',
+                'category': 'Training-Button-DependencyClass',
+                'action': 'Training-Button-DependencyClass',
+                'label': 'Training-Button-DependencyClass'
+            }, {
+                'select': '.Help-Button-Support',
+                'category': 'Help-Button-Support',
+                'action': 'Help-Button-Support',
+                'label': 'Help-Button-Support'
+            }, {
+                'select': '.Contact-Button-Support',
+                'category': 'Contact-Button-Support',
+                'action': 'Contact-Button-Support',
+                'label': 'Contact-Button-Support'
+            }, {
+                'select': '.StartJava-Button-Register',
+                'category': 'StartJava-Button-Register',
+                'action': 'StartJava-Button-Register',
+                'label': 'StartJava-Button-Register'
+            }, {
+                'select': '.StartJava-Button-Signup',
+                'category': 'StartJava-Button-Signup',
+                'action': 'StartJava-Button-Signup',
+                'label': 'StartJava-Button-Signup'
+            }, {
+                'select': '.StartJava-Button-Forum',
+                'category': 'StartJava-Button-Forum',
+                'action': 'StartJava-Button-Forum',
+                'label': 'StartJava-Button-Forum'
+            }, {
+                'select': '.StartJava-Button-AskGradle',
+                'category': 'StartJava-Button-AskGradle',
+                'action': 'StartJava-Button-AskGradle',
+                'label': 'StartJava-Button-AskGradle'
+            }, {
+                'select': '.StartJava-Button-Ebook',
+                'category': 'StartJava-Button-Ebook',
+                'action': 'StartJava-Button-Ebook',
+                'label': 'StartJava-Button-Ebook'
+            }, {
+                'select': '.Start-Native-Button-Getting-Started',
+                'category': 'Start-Native-Button-Getting-Started',
+                'action': 'Start-Native-Button-Getting-Started',
+                'label': 'Start-Native-Button-Getting-Started'
+            }, {
+                'select': '.Start-Native-Link-Build-Ops',
+                'category': 'Start-Native-Link-Build-Ops',
+                'action': 'Start-Native-Link-Build-Ops',
+                'label': 'Start-Native-Link-Build-Ops'
+            }, {
+                'select': '.Start-Native-Icon-Build-Ops',
+                'category': 'Start-Native-Icon-Build-Ops',
+                'action': 'Start-Native-Icon-Build-Ops',
+                'label': 'Start-Native-Icon-Build-Ops'
+            }, {
+                'select': '.Start-Native-Link-Build-Master',
+                'category': 'Start-Native-Link-Build-Master',
+                'action': 'Start-Native-Link-Build-Master',
+                'label': 'Start-Native-Link-Build-Master'
+            }, {
+                'select': '.Start-Native-Icon-Build-Master',
+                'category': 'Start-Native-Icon-Build-Master',
+                'action': 'Start-Native-Icon-Build-Master',
+                'label': 'Start-Native-Icon-Build-Master'
+            }, {
+                'select': '.Maven-V-Gradle-Link-Contact-Us',
+                'category': 'Maven-V-Gradle-Link-Contact-Us',
+                'action': 'Maven-V-Gradle-Link-Contact-Us',
+                'label': 'Maven-V-Gradle-Link-Contact-Us'
+            }, {
+                'select': '.Android-Training-Button-1-Register',
+                'category': 'Android-Training-Button-1-Register',
+                'action': 'Android-Training-Button-1-Register',
+                'label': 'Android-Training-Button-1-Register'
+            }, {
+                'select': '.Android-Training-Button-2-Register',
+                'category': 'Android-Training-Button-2-Register',
+                'action': 'Android-Training-Button-2-Register',
+                'label': 'Android-Training-Button-2-Register'
+            }, {
+                'select': '.Start-Android-Icon-App-Dev',
+                'category': 'Start-Android-Icon-App-Dev',
+                'action': 'Start-Android-Icon-App-Dev',
+                'label': 'Start-Android-Icon-App-Dev'
+            }, {
+                'select': '.Start-Android-Link-App-Dev',
+                'category': 'Start-Android-Link-App-Dev',
+                'action': 'Start-Android-Link-App-Dev',
+                'label': 'Start-Android-Link-App-Dev'
+            }, {
+                'select': '.Start-Android-Icon-Build-Master',
+                'category': 'Start-Android-Icon-Build-Master',
+                'action': 'Start-Android-Icon-Build-Master',
+                'label': 'Start-Android-Icon-Build-Master'
+            }, {
+                'select': '.Start-Android-Link-Build-Master',
+                'category': 'Start-Android-Link-Build-Master',
+                'action': 'Start-Android-Link-Build-Master',
+                'label': 'Start-Android-Link-Build-Master'
+            }, {
+                'select': '.Start-Android-Button-Get-Training',
+                'category': 'Start-Android-Button-Get-Training',
+                'action': 'Start-Android-Button-Get-Training',
+                'label': 'Start-Android-Button-Get-Training'
+            }, {
+                'select': '.Buy-Button-Consulting-1',
+                'category': 'Buy-Button-Consulting-1',
+                'action': 'Buy-Button-Consulting-1',
+                'label': 'Buy-Button-Consulting-1'
+            }, {
+                'select': '.Buy-Button-Consulting-2',
+                'category': 'Buy-Button-Consulting-2',
+                'action': 'Buy-Button-Consulting-2',
+                'label': 'Buy-Button-Consulting-2'
+            }, {
+                'select': '.StartNative-Button-MoreVideos',
+                'category': 'StartNative-Button-MoreVideos',
+                'action': 'StartNative-Button-MoreVideos',
+                'label': 'StartNative-Button-MoreVideos'
+            }, {
+                'select': '.StartNative-Button-NativeDocumentation',
+                'category': 'StartNative-Button-NativeDocumentation',
+                'action': 'StartNative-Button-NativeDocumentation',
+                'label': 'StartNative-Button-NativeDocumentation'
+            }, {
+                'select': '.StartNative-Button-SignUpHere',
+                'category': 'StartNative-Button-SignUpHere',
+                'action': 'StartNative-Button-SignUpHere',
+                'label': 'StartNative-Button-SignUpHere'
+            }, {
+                'select': '.StartNative-Button-Forum',
+                'category': 'StartNative-Button-Forum',
+                'action': 'StartNative-Button-Forum',
+                'label': 'StartNative-Button-Forum'
+            }, {
+                'select': '.StartNative-Button-HourlyConsulting',
+                'category': 'StartNative-Button-HourlyConsulting',
+                'action': 'StartNative-Button-HourlyConsulting',
+                'label': 'StartNative-Button-HourlyConsulting'
+            }, {
+                'select': '.StartNative-Button-ContactUs',
+                'category': 'StartNative-Button-ContactUs',
+                'action': 'StartNative-Button-ContactUs',
+                'label': 'StartNative-Button-ContactUs'
+            }, {
+                'select': '.Nav-Link-ServicesOverview',
+                'category': 'Nav-Link-ServicesOverview',
+                'action': 'Nav-Link-ServicesOverview',
+                'label': 'Nav-Link-ServicesOverview'
+            }, {
+                'select': '.Nav-Link-Services',
+                'category': 'Nav-Link-Services',
+                'action': 'Nav-Link-Services',
+                'label': 'Nav-Link-Services'
+            }],
+        });
+    });
+
+</script>
+<a href='#top' title='Scroll to top' id='scroll-top-link' aria-hidden='true' data-av_icon=''
+   data-av_iconfont='entypo-fontello'><span class="avia_hidden_link_text">Scroll to top</span></a>
+
+<div id="fb-root"></div>
+</body>
+</html>
