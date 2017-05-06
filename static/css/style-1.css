@@ -1,0 +1,865 @@
+/*
+ Theme Name:   TheGradle
+ Theme URI:    http://gradle.org/
+ Description:  Gradle Theme
+ Author:       Gradle
+ Author URI:   http://gradle.com
+ Template:     enfold
+ Version:      1.0.0
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+@font-face {
+  font-family: 'agn-medium';
+  src: url('../fonts/akzidenzgrotesk-medium-webfont.eot');
+  src: url('../fonts/akzidenzgrotesk-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/akzidenzgrotesk-medium-webfont.woff2') format('woff2'),
+  url('../fonts/akzidenzgrotesk-medium-webfont.woff') format('woff'),
+  url('../fonts/akzidenzgrotesk-medium-webfont.ttf') format('truetype'),
+  url('../fonts/akzidenzgrotesk-medium-webfont.svg#akzidenz-grotesk_bqmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AkzidenzGroteskBQ-Light';
+  src: url('../fonts/AkzidenzGroteskBQ-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/AkzidenzGroteskBQ-Light.otf')  format('opentype'),
+	     url('../fonts/AkzidenzGroteskBQ-Light.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-Light.ttf')  format('truetype'), url('../fonts/AkzidenzGroteskBQ-Light.svg#AkzidenzGroteskBQ-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'AkzidenzGroteskBQ-Reg';
+  src: url('../fonts/AkzidenzGroteskBQ-Reg.eot?#iefix') format('embedded-opentype'),  url('../fonts/AkzidenzGroteskBQ-Reg.otf')  format('opentype'),
+	     url('../fonts/AkzidenzGroteskBQ-Reg.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-Reg.ttf')  format('truetype'), url('../fonts/AkzidenzGroteskBQ-Reg.svg#AkzidenzGroteskBQ-Reg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+header * {
+    font-family: "agn-medium" !important;
+  font-weight: inherit !important;
+
+}
+
+#footer * {    font-family: 'AkzidenzGroteskBQ-Reg';  font-weight: inherit !important;}
+
+#main p, #main h1, #main h2, #main h3, #main h4, #main h5, #main h6, #main h7, ul, ul li, ol li, a, a:link, a:hover, span, strong, em {    font-family: 'AkzidenzGroteskBQ-Reg';}
+
+form * {    font-family: 'AkzidenzGroteskBQ-Reg';  font-weight: inherit !important;}
+
+table * {    font-family: 'AkzidenzGroteskBQ-Reg';  font-weight: inherit !important;}
+
+#main a.button, #main .avia_iconbox_title {
+    font-family: "agn-medium" !important;  font-weight: inherit !important;
+  
+
+}
+
+body div .avia-button {
+    font-family: "agn-medium" !important;  font-weight: inherit !important;
+  }
+
+.fa {
+
+  font-family: FontAwesome !important;
+
+}
+
+
+
+#footer .simple-social-icons ul li a {
+  font-family: "ssi-icomoon"  !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit !important;
+}
+
+h1.av-special-heading-tag {
+    font-weight: bold !important;
+}
+
+
+body { font-size: 16px; }
+
+h1, h2, h3, h4, h5, p, ul { font-family: 'Lato', sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+h3 { font-size: 30px; font-weight: 300; }
+
+p { font-weight: 300; }
+
+.special-heading-border {
+  display: none;
+}
+
+ol.task-list {
+  font-weight: 300;
+  font-size: 17px;
+}
+
+/* ALL BUTTONS */
+
+.avia-button.avia-size-x-large {
+  border-bottom: inset 3px #22DA27 !important;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+    font-family: "agn-medium" !important;  font-weight: inherit !important;
+}
+
+.avia-button.avia-size-large {
+  border-radius: 2px;
+  border-bottom: inset 3px #22DA27 !important;
+  text-decoration: none;
+    font-family: "agn-medium" !important;  font-weight: inherit !important;
+}
+
+.avia-button.avia-size-small {
+  border-radius: 2px;
+  border-bottom: inset 2px #22DA27 !important;
+  text-decoration: none;
+    font-family: "agn-medium" !important;  font-weight: inherit !important;
+}
+
+/* END ALL BUTTONS */
+
+/* clear fix that doesn't require markup */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* END CLEAR FIX */
+
+/***************************
+HOME LANDING PAGE
+***************************/
+
+/**** NAVIGATION BAR ****/
+
+#top .header_color.av_header_transparency .avia-menu-fx {
+  background: #22DA27 !important;
+}
+
+/**** FOOTER - NAVIGATION BAR ****/
+
+li#menu-item-1557, li#menu-item-1556, li#menu-item-1557, li#menu-item-1558, li#menu-item-1559 {
+  box-shadow: none;
+}
+
+#top .header_color.av_header_transparency .avia-menu-fx {
+  background: #22DA27 !important;
+}
+
+ul#menu-footer-one a:hover, ul#menu-footer-two a:hover, #footer .widget a:hover {
+  text-decoration: underline;
+}
+
+/**** HOME HEADER AREA ****/
+
+h1.av-special-heading-tag {
+  text-transform: uppercase;
+  font-weight: 700 !important;
+}
+
+strong.header-section-accents {
+  color: #22DA27;
+  text-style: italics;
+}
+
+.main-header-button {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#home-banner .avia-button-fullwidth {
+  border-radius: 2px;
+  border-bottom: inset 4px #22DA27 !important;
+}
+
+#home-banner .avia-button-fullwidth .avia_button_background {
+  border-bottom: inset 4px #22DA27 !important;
+  opacity: 1;
+}
+
+#home-banner .avia-button-fullwidth:hover .avia_button_background:hover {
+  background-color: #22DA27 !important;
+}
+
+p.release-date {
+  color: #ffffff;
+  font-size: 26px;
+}
+
+/**** END HOME HEADER AREA ****/
+
+
+
+/**** HOME PLUGIN PORTAL ****/
+
+#top #s {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.subscribe-container {
+  clear: both;
+  display: block;
+  visibility: visible;
+  z-index: 3;
+  position: relative;
+  left: 0;
+  width: auto;
+}
+
+#top #searchform>div {
+  position: relative;
+  max-width: 100%;
+}
+
+#top #searchsubmit,.ajax_load {
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.js_active .active_tab_content {
+  border-radius: 0px 7px 7px 7px;
+}
+
+/** TAB HEADERS & COLORS  **/
+
+.main_color .sidebar_tab, .main_color .tabcontainer .tab {
+  color: #000000;
+}
+
+search-portal .search-header {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+  font-size: 19px;
+   font-weight: 300 !important;
+  float: left;
+  margin-right: 20px;
+  margin-top: 4px;
+  width: 155px;
+}
+
+/** TAB FORM MARGINS  **/
+
+.form-group.plugin-portal {
+  margin-bottom: -35px;
+}
+
+.form-group.sitesearch-portal {
+  margin-bottom: -10px;
+}
+
+/** SEARCH FORM RADIUS / COLOR / SIZE **/
+
+.search-portal .search-header > input.header-search, #top .main_color input[type='text'] {
+  color: #000;
+  background-color: #f9f9f9;
+  border-color: #f9f9f9;
+  border-radius: 50px;
+  width: 100%;
+  position: relative;
+  padding: 11px 47px 11px 5px;
+  z-index: 1;
+  margin: 0;
+  box-shadow: none;
+}
+
+search-portal .plugin-portal {
+  margin: 0 auto;
+}
+
+form#search-website input#st-search-input {
+  padding: 11px 47px 11px 5px;
+}
+
+form#search-website #st-search-input {
+  color: #000;
+  border-color: #f9f9f9;
+  border-radius: 50px;
+  width: 100%;
+  position: relative;
+  padding: 11px 47px 11px 5px !important;
+  z-index: 1;
+  margin: 0;
+  box-shadow: none;
+}
+
+/**** END HOME PLUGIN PORTAL ****/
+
+
+/**** NEWS FEED ****/
+
+#homeEvents h3 {
+  text-transform: uppercase !important;
+  font-weight: 800;
+  color: #141414;
+}
+
+small.gradle-imp-links {
+  display: block; 
+  margin-top: 10px; 
+  font-size: 15px; 
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tagline-links {
+  margin-top: 10px; 
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center; 
+  color: #fff;
+}
+
+
+/***************************
+END HOME LANDING PAGE
+***************************/
+
+
+/***************************
+CTA BANNER SECTION
+***************************/
+
+/**** SLIDER BACKGROUND / CTA BANNER SECTION ****/
+
+.cta-banner .cta-banner-img { 
+  width: 200px; 
+}
+
+.caption_fullwidth, .av-parallax {
+  background-color: rgba(8, 13, 21, 0.8);
+}
+
+.avia-section.av-minimum-height {
+  background-color: rgba(8, 13, 21, 0.8);
+}
+
+#testimonials-bg {
+  background-color: rgba(8, 13, 21, 0.8);
+}
+
+.cta-banner-img {
+  width: 200px;
+  margin-top: 5px;
+}
+
+/**** TIMELINE / COUNTDOWN ****/
+
+#top .av-default-style .av-countdown-cell-inner {
+  border-style: solid;
+  border-width: 1px;
+  margin: 4px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.av-countdown-active.av-countdown-timer {
+  opacity: 1;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/**** CTA BANNER SECTION 
+S ****/
+
+button.books-button {
+  border-radius: 7px !important;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400 !important;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 15px 30px 13px;
+  min-width: 139px !important;
+  background: #22DA27;
+  border-bottom: inset 3px #497a0f!important;
+  border: none;
+  cursor: pointer;
+}
+
+button.books-button:hover {
+  background: #00ff00;
+}
+
+#top .avia-slideshow-button {
+  border-radius: 7px;
+  text-transform: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 400 !important;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #22DA27;
+  border-bottom: inset 3px #497a0f;
+}
+
+/**** SLIDER ARROWS ****/
+
+#top .av-large-testimonial-slider .avia-slideshow-arrows a {
+color: #22DA27;
+}
+
+/***************************
+END SLIDERS & SLIDER ELEMENTS
+***************************/
+
+
+/***************************
+CLIENT LOGOS SECTION
+***************************/
+
+a.slide-image {
+  background: none !important;
+}
+
+.slide-entry-wrap {
+  height: 90px;
+}
+
+/***************************
+END CLIENT LOGOS SECTION
+***************************/
+
+
+/***************************
+TRAINING PAGE
+***************************/
+
+.avia-image-container.training-icon {
+  width: 130px;
+}
+
+span.training-desktop { color: #ffffff; }
+
+/***************************
+BOOKS PAGE
+***************************/
+
+.books-title h2 {
+  letter-spacing: 4px;
+}
+
+.books-list li {
+  margin-left: 1em;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul {
+  margin: 2em 0;
+  font-weight: 300;
+}
+
+.books-list li:before {
+  content: '\f054';
+  font-family: 'FontAwesome';
+  font-size: 12px;
+  float: left;
+  margin-left: -1.5em;
+  margin-top: 2px;
+}
+
+#books-content .avia-button.avia-size-medium {
+  font-size: 13px;
+  border-bottom: inset 3px #22DA27;
+  border-radius: 5px;
+  border-color: #22DA27 !important;
+}
+
+/***************************
+END BOOKS PAGE
+***************************/
+
+
+/**** FEATURES SECTION ****/
+
+.avia-tooltip {
+  background: rgba(0, 0, 0, 0.9);
+  font-weight: 300;
+}
+
+.avia-tooltip .avia-arrow {
+   background: rgba(0, 0, 0, 0.9);
+  border: none;
+}
+
+#top .av_font_icon a {
+   color: inherit;
+   display: block;
+   font-size: 30px !important;
+}
+
+.av_font_icon.av-icon-style-border .av-icon-char {
+  border-radius: 50%;
+  border-width: 1px;
+   padding: 15px !important;
+   color: inherit;
+  padding: 15px;
+}
+
+.features-icon {
+  text-decoration: none;
+}
+
+.av_icon_caption {
+  font-size: 16px;
+  text-transform: none;
+  margin-top: 8px;
+  font-weight: 400;
+}
+
+/**** END FEATURES SECTION ****/
+
+/***************************
+CONTACT PAGES
+***************************/
+
+#contact > form p.submit input {
+  border-bottom: inset 3px #22DA27;
+  border-radius: 5px;
+  margin: 0;
+  padding: 14px 45px;
+  font-size: 16px;
+  background: #22DA27;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+
+/***************************
+END CONTACT PAGES
+***************************/
+
+
+/***************************
+BLOG PAGES
+***************************/
+
+#top .fullsize .template-blog .post .entry-content-wrapper>* {
+  max-width: 800px !important;
+  overflow: hidden;
+}
+
+.entry-content-wrapper .post-title {
+  font-size: 27px;
+}
+
+.fullsize .content .entry-content-wrapper {
+  font-size: 17px !important;
+  letter-spacing: -0.2px;
+}
+
+.entry-content-wrapper .big-preview.single-big {
+  float: left !important;
+  padding-right: 20px !important;
+}
+
+/*
+.content .entry-content-wrapper .entry-content-wrapper {
+  margin-bottom: -50px !important;
+}
+*/
+
+/*** FOR VIDEOS ***/
+
+h2.post-title.entry-title {
+  padding: 0px 0px 15px 0px !important;
+}
+
+/***************************
+END BLOG PAGES
+***************************/
+
+
+/***************************
+TEAM PAGE
+***************************/
+
+.team-img-container img {
+  margin:0;
+}
+
+.team-member-description p {
+  margin-top: 0;
+  color: #999;
+}
+
+.team-member-job-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #666 !important;
+}
+
+.avia-team-member {
+  margin-bottom: 40px !important;
+  width: 180px;
+}
+
+.team-member-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.team-social a {
+  text-decoration: none;
+  position: relative;
+  border-radius: 30px;
+  padding: 0 10px;
+  background: #fff;
+  margin: 3px;
+  display: inline-block;
+  height: 43px;
+  line-height: 44px;
+  width: 43px;
+}
+
+/***************************
+END TEAM PAGE
+***************************/
+
+
+/**** .page { ****/
+/****	padding: 20px 0; ****/
+/**** } ****/
+
+.button:hover {
+	text-decoration: none;
+}
+
+.av-menu-button-colored > a .avia-menu-text {
+	padding: 10px 14px 9px 14px;
+}
+
+.main_menu {
+	font-size: 18px;
+}
+
+.main_menu ul.sub-menu {
+	font-weight: bold;
+	white-space: nowrap;
+	width: auto;
+	min-width: 175px;
+}
+
+
+.main_color .heading-color, .main_color a.iconbox_icon:hover, .main_color h1, .main_color h2, .main_color h3, .main_color h4, .main_color h5, .main_color h6, .main_color .sidebar .current_page_item>a, .main_color .sidebar .current-menu-item>a, .main_color .pagination .current, .main_color .pagination a:hover, .main_color strong.avia-testimonial-name, .main_color .heading, .main_color .toggle_content strong, .main_color .toggle_content strong a, .main_color .tab_content strong, .main_color .tab_content strong a, .main_color .asc_count, .main_color .avia-testimonial-content strong, .main_color div .news-headline, #top .main_color .av-related-style-full .av-related-title, .main_color .av-default-style .av-countdown-cell-inner .av-countdown-time, .main_color .wp-playlist-item-meta.wp-playlist-item-title {
+	color: #444;
+}
+
+span.tag {
+  font-size: 15px;
+  border: 1px solid #405c72;
+  border-radius: 3px;
+  color: #405c72;
+  padding: 0 0.5em;
+  display: inline-block;
+  line-height: 1.65;
+  margin-left: 0.5ex;
+}
+
+.avia_textblock ul.square {
+  margin-top: 0.85em;
+  margin-bottom: 0.85em;
+  box-shadow: none;
+}
+.avia_textblock ul.square li {
+  list-style-type: square;
+}
+.avia_textblock ul.square ul {
+  margin: 0;
+}
+.avia_textblock ul.square ul li {
+  list-style-type: circle;
+}
+.avia_textblock ul.icons {
+  margin-top: 0.85em;
+  margin-bottom: 0.85em;
+}
+.avia_textblock ul.icons li {
+  margin-left: 0.5ex;
+}
+pre.source {
+  color: #222;
+  border: 0;
+  margin: 0;
+}
+.page-id-996 .socket_color .tab.active_tab {
+  color: #666 !important;
+}
+.page-id-996 .socket_color .tab_content {
+  padding: 0 !important;
+}
+.page-id-996 .socket_color .tab_inner_content {
+  margin: 0 !important;
+}
+
+.av_promobox {
+  border-radius: 3px;
+  margin-bottom: 0;
+}
+
+#top .av_promobox h3 a:hover {
+  text-decoration: underline;
+}
+
+#top h3.iconbox_content_title {
+  text-transform: none;
+  font-weight: bold;
+}
+
+#top .socket_color .avia-icon-list .iconlist-timeline {
+  border-color: #e1e1e1;
+}
+
+
+/* TRAINING CHART */
+.cimg { width: 100%; clear: both; overflow: auto; }
+.cimg .col { float: left; margin-right: 1%; text-align: center; min-height: 100px; padding-bottom: 10px; }
+
+.cimg div.table {
+  display: table;
+  vertical-align: middle;
+  text-align: center;
+  word-wrap: break-word;
+  width: 100%;
+  height: 100px;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+}
+.cimg div.cell {
+  color: #ffffff;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 130%;
+  padding: 0 20px;
+}
+.cimg .firstcol {
+  width: 10%;
+}
+
+.cimg .lastcol { margin-right: 0; }
+
+.cimg .firstcol { width: 14%; }
+.cimg .onethird { width: 27.66%; }
+.cimg .onefourth { width: 20.5%; }
+.cimg .fullcol { width: 85%; }
+
+.cimg.green div.cell { background-color: #088629; }
+.cimg.green .firstcol  div.cell { background-color: #005400; }
+.cimg.blue div.cell { background-color: #1065BD; }
+.cimg.blue .firstcol div.cell { background-color: #003787; }
+.cimg.purple div.cell { background-color: #63387B; }
+.cimg.purple .firstcol div.cell { background-color: #32094a; }
+.cimg.maroon div.cell { background-color: #8C1810; }
+.cimg.maroon .firstcol div.cell { background-color: #520000; }
+
+.cimg div.col a { text-decoration: none; }
+
+
+
+/***************************
+PHONES
+***************************/
+
+@media only screen and (max-width: 989px) {
+
+  .cimg div.cell {
+    font-size: 100%;
+    padding: 0 5px;
+  }
+}
+  
+@media only screen and (max-width: 767px) {
+
+  span.training-mobile { color: #141414 !important; }
+  .cimg .firstcol, .cimg .onethird, .cimg .onefourth, .cimg .fullcol { width: 100%; }
+  .cimg .col { min-height: 80px; }
+  .cimg div.table { height: 70px;  }
+
+}
+  
+@media only screen and (max-width: 480px) {
+
+  #testimonials-bg { display: none }
+
+  .slide-entry-wrap {
+    height: auto;
+  }
+  
+  .entry-content-wrapper .big-preview.single-big {
+    float: none !important;
+    padding-right: 0px !important;
+    width: 180px;
+    margin: 0 auto;
+  }
+
+}
+@media only screen and (max-width: 320px) {
+  .header-message h1.landing-text {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+
+/* Comment centering fix */
+
+.comment-entry {
+max-width: 600px !important;
+}
+
+/* Fix for disappearing masthead */
+.js_active .av-minimum-height .container {
+  opacity: 1;
+}
+
+#top .widget ul.children {
+display:none !important;
+}
+.post-meta-infos2 {
+    font-size: 12px;
+    position: relative;
+    top: -25px;
+    display: block;
+    margin-bottom: -40px;
+}
+
+@media only screen and (max-width: 767px){
+  .home header#header{ background: #fff !important; }
+  .home #email-input{ width: 100% !important; }
+}
+
+
+body.archive   .single-small .post_author_timeline{
+	border-color:transparent;
+}

@@ -1,0 +1,156 @@
+/*CUSTOM CSS*/
+
+.home #main .main_color.fullsize:first-child {
+  /*height: auto;*/
+  height: 86vh;
+}
+.home #main .main_color.fullsize:first-child .container {
+	margin-top: 0;
+}
+.avia_codeblock.firstblock {
+	position: relative;
+}
+.home .avia_codeblock #shapes {
+	position: absolute;
+	top:-119px;
+}
+.home .avia_codeblock #landing-message {
+	position: relative;
+	height: auto;
+	padding-top: 15px;
+}
+.home #landing-message .header-message {
+	position: relative;
+	margin-top: 0;
+	top: 0;
+}
+
+/*NEW MODS*/
+
+#landing-message {
+    padding-bottom: 15vh;
+}
+
+#landing-message h1.landing-text,
+#above-form {
+    color: #05303A !important;
+    line-height: 70px !important;
+}
+
+#above-form {
+    font-size: 25px !important;
+    font-weight: 300 !important;
+    line-height: inherit !important;
+    /*font-family: Sans-Serif;*/
+}
+
+#top #email-input {
+    border-bottom: 3px solid #22da27;
+    color: #22da27;
+    width: 100%;
+    margin-top: 10px;
+    max-width: 450px;
+}
+
+#top #email-input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #22da27;
+}
+#top #email-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #22da27;
+    opacity:  1;
+}
+#top #email-input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #22da27;
+    opacity:  1;
+}
+#top #email-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #22da27;
+}
+#top #email-input:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+    color: #22da27;
+}
+
+.home div#av_section_1 {
+    margin-top: 0;
+}
+
+#top #email-submit {
+    background: none;
+    border: 2px solid #22da27;
+    color: #22da27;
+    width: 70px;
+    line-height: 32px;
+    font-size: 21px;
+    height: inherit;
+    margin-left: -20px;
+}
+
+#top #main .avia-section .top-content {
+    padding-top: 0 !important;
+}
+
+
+.avia-section.av-minimum-height .container .content {
+    vertical-align: baseline;
+}
+
+@media only screen and (max-width: 1024px) {
+    #landing-message h1.landing-text,
+    .home #landing-message h1.landing-text {
+        font-size: 70px;
+    }
+    #top #email-input {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .av-parallax-inner {
+        background-position: 46% -170px !important;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    #landing-message h1.landing-text,
+    .home #landing-message h1.landing-text {
+        font-size: 45px;
+        line-height: 36px !important;
+    }
+
+
+    .av-parallax-inner {
+        background-position: 50% 50px !important;
+    }
+
+    #above-form {
+        font-size: 18px !important;
+    }
+
+    .home .avia_codeblock #landing-message {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    #landing-message h1.landing-text,
+    .home #landing-message h1.landing-text {
+        font-size: 40px;
+    }
+
+    #above-form {
+        font-size: 16px !important;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 880px) and (min-width: 768px) {
+  #top #header .av-main-nav > li > a {
+    font-size: 13px;
+    padding: 6px 7px 0;
+  }
+}

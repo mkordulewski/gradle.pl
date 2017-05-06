@@ -1,0 +1,216 @@
+/* Enter Your Custom CSS Here */
+
+.main_color .tabcontainer.gettingstarted .tab {
+      font-size: 25px;
+    color: #919191;
+}
+
+.showbox {
+ cursor:pointer; 
+}
+.hidebox, .hidebox1, .hidebox2 {
+ display:none; 
+}
+
+
+.gettingstarted  h4 {
+ text-transform:uppercase;
+  border-bottom:#e1e1e1 1px solid;
+  padding-bottom:25px;
+  padding-top:20px;
+  font-size:26px;
+}
+
+.gettingstarted  p  {
+      font-weight: 400;
+ line-height:40px; 
+}
+
+
+.gettingstarted  .greene {
+background:#22DA27;  padding:5px;
+  color:#FFFFFF;
+  font-size:36px;
+  margin-right:15px;
+  
+}
+
+/* SB */
+
+#landing-message h1.landing-text, .home #landing-message h1.landing-text{
+    /*font-size: 65px !important;
+    line-height: 80px !important;*/
+    text-transform: none !important;
+    font-family: 'ag', sans-serif;
+    letter-spacing: -1px;
+      font-size: 80px;
+    line-height: 80px;
+}
+
+.page-id-6865 #shapes {
+    background-color: transparent !important;
+    display: block;
+    height: 470px !important;
+    position: absolute;
+    top: 10px;
+    width: 100% !important;
+}
+
+.page-id-6865 #av_section_2 {
+    margin-top: 380px;
+}
+
+.page-id-6865 .header-message {
+    margin-top: -10px !important;
+    position: absolute;
+    text-align: center;
+    top: 0 !important;
+    width: 100%;
+    z-index: 100;
+}
+#landing-message.show, .page-id-6865 #landing-message.show h1.landing-text, .page-id-6865 #landing-message.show .get-started, .page-id-6865 #landing-message.show .down-arrow, .page-id-6865 #landing-message.scrollIn, .page-id-6865 #landing-message.scrollIn h1.landing-text, .page-id-6865 #landing-message.scrollIn .get-started, .page-id-6865 #landing-message.scrollIn .down-arrow {
+    opacity: .8 !important;
+}
+
+.home #landing-message{width: 100%;}
+.home #shapes {
+    background-color: white;
+    height: 520px;
+    margin-top: 0px !important;
+    width: 100%;
+}
+
+
+
+.home #main .main_color:first-child  {  height:100%;    height: 100vh;   }
+
+.home #main .main_color:first-child .container {    max-width: 100%;  padding: 0; margin-top: -119px;}
+
+.home .main_color:first-child  .container_wrap.fullsize .container .av-content-full.units {     padding-top: 0;}
+
+.home #main .main_color:first-child .content{padding-top:0;}
+
+.home .header_color .container_wrap_meta{    background: rgba(255, 255, 255, 0);}
+
+.home #shapes {    background-color: white;  height: 100%;    height: 100vh;    margin-top: -2px !important;   width: 100%;    width: 100vw;   }
+
+.home .header_color .header_bg{  background-color: rgba(255, 255, 255, 0);}
+
+.home .header_color div{    border-color: transparent;}
+
+.home .header-scrolled {  background-color: rgba(255, 255, 255, 0.9) !important;}
+
+.home .header-scrolled  div{    border-color: #e1e1e1 !important;}
+
+.home main.template-page.content.av-content-full.alpha.units{padding-bottom:0;}
+
+.home .container_wrap{border:0;}
+
+.home .header-scrolled .container_wrap{border-top:1px;}
+
+@media only screen and (max-width: 767px){
+  .home header#header{ background: #fff !important; }
+  .home #email-input{ width: 100% !important; }
+
+.home > .main_color.container_wrap.fullsize .container{
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    float: none;
+  }}
+
+.home .header-message {
+    padding-top: 0;
+    
+}
+.home div#av_section_1 {
+    margin-top: -6px;
+}
+
+.get-started.active {
+    border-color: #ff09ff;
+    font-family: 'ag', times, helvetica, arial, sans-serif;
+    height: auto;
+  	letter-spacing: 0;
+    box-sizing: content-box;
+}
+
+.get-started.active span {
+    box-sizing: content-box;
+}
+
+#above-form {
+    font-family: 'ag', times, helvetica, arial, sans-serif;
+    height: auto;
+  	letter-spacing: 0;
+    box-sizing: content-box;
+    text-transform: none;
+    color: #ff09ff;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#top .avia_codeblock_section.avia_code_block_4 form input[type="text"], #top .avia_codeblock_section.avia_code_block_4 form input[type="email"] {
+	width: 100% !important;
+    margin-bottom: 25px;
+    border-radius: 0;
+    background-color: #f8f8f8;
+    border-color: #e1e1e1;
+    color: #808080;
+  padding: 11px 47px 11px 5px;
+}
+
+.home .avia_codeblock #landing-message {
+padding-top: 0;
+}
+
+/*************************************
+* Style for the email subscrib, responsive issue
+* @by Mashiur Rahman newfunbox@gmail.com
+********
+#for make the button text center
+**************************************/
+.header-message input#email-submit {
+  line-height: 31px;
+  padding: 10px;
+  text-align: center !important;
+}
+
+.button {
+  background-color: #22da27 !important;
+  color: #02303A !important; 
+}
+
+.avia-button {
+  background-color: #22da27 !important;
+   color: #02303A !important; 
+}
+
+.av-menu-button-colored > a .avia-menu-text {
+  background-color: #22da27 !important;
+   color: #02303A !important; 
+}
+
+.stripe-button-el
+
+{
+  background-color: #22da27 !important;
+   color: #02303A !important; 
+  background-image:none;
+}
+
+.stripe-button-el span {
+  background-color: #22da27 !important;
+  background-image: none;
+  color: #02303a !important;
+  padding: 8px 14px 21px;   height: 45px;
+}
+
+@media only screen and (min-width: 767px){
+  .fixed-right-sidebar {
+    position: fixed !important;
+    right: 7% !important;
+  }
+}
