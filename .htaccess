@@ -1,5 +1,5 @@
 ErrorDocument 404 /404.html
 
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^[^.]+\.(gradle\.pl)$ [NC]
-RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L,NE]
+RewriteCond %{HTTP_HOST} ^(.+)\.(gradle\.pl)$ [NC]
+RewriteRule ^ http://%2%{REQUEST_URI} [R=301,L,NE]
