@@ -1,6 +1,6 @@
 # Gradle.pl
 
 * Polish Gradle website:
-  * http://gradle.pl/
+  * https://gradle.pl/
 * Based on main Gradle website:
-  * http://gradle.org/
+  * https://gradle.org/
