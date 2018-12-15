@@ -3,7 +3,7 @@ ErrorDocument 404 /404.html
 RewriteEngine On
 
 # redirection from subdomains
-RewriteCond %{HTTP_HOST} ^(.+)\.(([^.]+)\.pl)$ [NC]
+RewriteCond %{HTTP_HOST} ^(.+)\.(([^.]+)\.(pl|com))$ [NC]
 RewriteRule ^ https://%2%{REQUEST_URI} [R=301,L,NE]
 
 # force ssl
